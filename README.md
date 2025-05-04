@@ -5,7 +5,7 @@ Welcome to the **Restores Recipe API**! This API allows you to manage a collecti
 ## 🌐 Base URL
 
 ```
-http://localhost:5000
+{Base URL}
 ```
 
 Ensure your API server is running before making requests.
@@ -19,7 +19,7 @@ Ensure your API server is running before making requests.
 Fetch all available recipes.
 
 ```bash
-curl -X GET http://localhost:5000/recipes
+curl -X GET {Base URL}/recipes
 ```
 
 ---
@@ -29,7 +29,7 @@ curl -X GET http://localhost:5000/recipes
 Retrieve a recipe by its `dish_id`.
 
 ```bash
-curl -X GET http://localhost:5000/recipe/1
+curl -X GET {Base URL}/recipe/1
 ```
 
 > Replace `1` with the appropriate `dish_id`.
@@ -41,7 +41,7 @@ curl -X GET http://localhost:5000/recipe/1
 Add a new recipe with a POST request.
 
 ```bash
-curl -X POST http://localhost:5000/recipe \
+curl -X POST {Base URL}/recipe \
   -H "Content-Type: application/json" \
   -d '{
     "dish_name": "Spaghetti Carbonara",
@@ -66,7 +66,7 @@ curl -X POST http://localhost:5000/recipe \
 Modify specific fields of an existing recipe.
 
 ```bash
-curl -X PUT http://localhost:5000/recipe/1 \
+curl -X PUT {Base URL}/recipe/1 \
   -H "Content-Type: application/json" \
   -d '{
     "dish_name": "Spaghetti Carbonara Deluxe",
@@ -85,7 +85,7 @@ curl -X PUT http://localhost:5000/recipe/1 \
 Remove a recipe by ID.
 
 ```bash
-curl -X DELETE http://localhost:5000/recipe/1
+curl -X DELETE {Base URL}/recipe/1
 ```
 
 > Replace `1` with the ID of the recipe you want to delete.
@@ -97,7 +97,7 @@ curl -X DELETE http://localhost:5000/recipe/1
 Returns a simple documentation page (HTML).
 
 ```bash
-curl -X GET http://localhost:5000
+curl -X GET {Base URL}
 ```
 
 ---
