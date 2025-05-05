@@ -1,4 +1,4 @@
-# 🍽️ Restores Recipe API
+# 🍽️ Restmenu Recipe API
 
 Welcome to the **Restores Recipe API**! This API allows you to manage a collection of recipes, including creating, retrieving, updating, and deleting them.
 
